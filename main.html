@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Card</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    .recipe-card {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .recipe-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .recipe-content {
+      padding: 20px;
+    }
+    .recipe-title {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .section-title {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    ul, ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .print-button {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .print-button button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .print-button button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="recipe-card">
+  <div class="recipe-image">
+    https://via.placeholder.com/700x300?text=Recipe+Image
+  </div>
+  <div class="recipe-content">
+    <div class="recipe-title">Delicious Recipe Title</div>
+
+    <div class="section-title">Ingredients</div>
+    <ul>
+      <li>1 cup of something</li>
+      <li>2 tablespoons of something else</li>
+      <li>1/2 teaspoon of magic</li>
+    </ul>
+
+    <div class="section-title">Instructions</div>
+    <ol>
+      <li>Preheat the oven to 350°F (175°C).</li>
+      <li>Mix all ingredients in a bowl.</li>
+      <li>Bake for 25 minutes or until golden brown.</li>
+    </ol>
+
+    <div class="print-button">
+      <button onclick="window.print()">Print Recipe</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
